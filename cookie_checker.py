@@ -1,25 +1,25 @@
 # cookie_checker.py
-# Main script for the Cookie Checker tool
+# White-Hat Themed Cookie Checker Tool by cyberPatch
 
-import json
 import os
-from datetime import datetime
 
 def banner():
-    print("""\033[95m
-  ██████╗  ██████╗  ██████╗██╗  ██╗██╗███████╗
-  ██╔══██╗██╔═══██╗██╔════╝██║  ██║██║██╔════╝
-  ██████╔╝██║   ██║██║     ███████║██║█████╗  
-  ██╔═══╝ ██║   ██║██║     ██╔══██║██║██╔══╝  
-  ██║     ╚██████╔╝╚██████╗██║  ██║██║███████╗
-  ╚═╝      ╚═════╝  ╚═════╝╚═╝  ╚═╝╚═╝╚══════╝
-          [94mFacebook Cookie Checker v1.0
-         [0mby [92mcyberPatch[0m
+    print(""" __        __   _ _     _       _     _           
+ \ \      / /__| | |__ (_)_ __ | |__ (_)_ __  ___ 
+  \ \ /\ / / _ \ | '_ \| | '_ \| '_ \| | '_ \/ __|
+   \ V  V /  __/ | |_) | | | | | | | | | |_) \__ \
+    \_/\_/ \___|_|_.__/|_|_| |_|_| |_|_| .__/|___/
+                                       |_|        
+    Facebook Cookie Checker v1.0
+    Ethical Tool for Account Analysis
+    by cyberPatch
 """)
 
 def main_menu():
-    banner()
-    print("""\033[96m
+    while True:
+        os.system("clear")
+        banner()
+        print("""
 [1] Check FB Cookie
 [2] Get Token from Cookie
 [3] Extract UID from Profile
@@ -28,8 +28,12 @@ def main_menu():
 [6] Learn About Tool
 [0] Admin Panel (PIN Required)
 [7] Exit Tool
-\033[0m""")
-    input("\nEnter option: ")
+""")
+        choice = input("\nEnter option: ")
+        if choice == '7':
+            break
+        else:
+            input("Feature not yet implemented. Press Enter to return...")
 
 if __name__ == "__main__":
     main_menu()
